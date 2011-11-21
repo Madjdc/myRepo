@@ -1,0 +1,38 @@
+Logfile initialized
+[INFO] logfile = C:\AppSpace\myApp\build.log
+[DEBUG] C:\Titanium\mobilesdk\win32\1.7.3\android\builder.py simulator myApp C:\Android\android-sdk C:\AppSpace\myApp Myapp 3 HVGA
+[INFO] Building myApp for Android ... one moment
+[INFO] Titanium SDK version: 1.7.3 (10/17/11 13:44 dcf4257)
+[DEBUG] Waiting for device to be ready ...
+[TRACE] adb devices returned 1 devices/emulators
+[DEBUG] Device connected... (waited 0 seconds)
+[DEBUG] waited 0.015000 seconds on emulator to get ready
+[DEBUG] Myapp installed? False
+[DEBUG] Myapp installed? False
+[INFO] Fastdev server running, deploying in Fastdev mode
+[INFO] Fastdev server running, deploying in Fastdev mode
+[INFO] Copying project resources..
+[INFO] Copying project resources..
+[TRACE] Generating Java Classes
+[TRACE] Generating Java Classes
+[ERROR] Exception occured while building Android project:
+[ERROR] Traceback (most recent call last):
+[ERROR]   File "C:\Titanium\mobilesdk\win32\1.7.3\android\builder.py", line 1971, in <module>
+[ERROR]     s.build_and_run(False, avd_id, debugger_host=debugger_host)
+[ERROR]   File "C:\Titanium\mobilesdk\win32\1.7.3\android\builder.py", line 1723, in build_and_run
+[ERROR]     True, project_dir = self.top_dir, include_all_ti_modules=include_all_ti_modules)
+[ERROR]   File "C:\Titanium\mobilesdk\win32\1.7.3\android\android.py", line 253, in create
+[ERROR]     shutil.rmtree(os.path.join(app_dir,'res'))
+[ERROR]   File "C:\Users\Jelle De Clerck\AppData\Local\Titanium Studio\plugins\com.appcelerator.titanium.python.win32_1.0.0.1312318466\python\lib\shutil.py", line 175, in rmtree
+[ERROR]     rmtree(fullname, ignore_errors, onerror)
+[ERROR]   File "C:\Users\Jelle De Clerck\AppData\Local\Titanium Studio\plugins\com.appcelerator.titanium.python.win32_1.0.0.1312318466\python\lib\shutil.py", line 167, in rmtree
+[ERROR]     onerror(os.listdir, path, sys.exc_info())
+[ERROR]   File "C:\Users\Jelle De Clerck\AppData\Local\Titanium Studio\plugins\com.appcelerator.titanium.python.win32_1.0.0.1312318466\python\lib\shutil.py", line 165, in rmtree
+[ERROR]     names = os.listdir(path)
+[ERROR] WindowsError: [Error 3] Het systeem kan het opgegeven pad niet vinden: 'C:\\AppSpace\\myApp\\build\\android\\res\\drawable/*.*'
+[DEBUG] Processing Android resource drawables
+[DEBUG] copying app icon: C:\AppSpace\myApp\build\android\bin\assets\Resources\appicon.png
+[DEBUG] generating theme.xml
+[DEBUG] found splash screen at C:\AppSpace\myApp\build\android\bin\assets\Resources\default.png
+[TRACE] Writing out AndroidManifest.xml
+[ERROR] Error generating R.java from manifest
