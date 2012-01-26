@@ -5,8 +5,11 @@ Logfile initialized
 [INFO] Titanium SDK version: 1.8.0.1 (12/22/11 13:09 fbdc96f)
 [DEBUG] Waiting for device to be ready ...
 [TRACE] adb devices returned 1 devices/emulators
-[DEBUG] Device connected... (waited 0 seconds)
-[DEBUG] waited 0.017000 seconds on emulator to get ready
+[TRACE] adb devices returned 1 devices/emulators
+[TRACE] adb devices returned 1 devices/emulators
+[DEBUG] Device connected... (waited 10 seconds)
+[DEBUG] waited 10.053000 seconds on emulator to get ready
+[INFO] Waiting for the Android Emulator to become available
 [DEBUG] com.Madjdc.MyApp installed? True
 [INFO] Fastdev server running, deploying in Fastdev mode
 [INFO] Copying project resources..
@@ -26,5 +29,4 @@ Logfile initialized
 [INFO] Re-launching application ... myApp
 [INFO] Launching application ... myApp
 [TRACE] Launch output: Starting: Intent { act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] cmp=com.Madjdc.MyApp/.MyappActivity }
-Warning: Activity not started, its current task has been brought to the front
 

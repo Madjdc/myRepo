@@ -137,11 +137,17 @@ get_request_verifier(callback);
 // --------------------------------------------------------
 function get_request_verifier(callback) {
 var url = "http://api.twitter.com/oauth/authorize?oauth_token="+cfg.request_token;
+if(Ti.Platform.osname=='iphone'){
 var win = Ti.UI.createWindow({
 top: 0,
 modal: true,
 fullscreen: true
 });
+} else {
+	var win = Ti.UI.createWindow({
+		top:0
+	});
+}
 // add close button on iPhone
 if (Ti.Platform.osname=='iphone' && cfg.show_login_toolbar) {
 var webView = Ti.UI.createWebView({
