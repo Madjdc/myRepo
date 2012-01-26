@@ -6,11 +6,13 @@ Logfile initialized
 [DEBUG] Waiting for device to be ready ...
 [TRACE] adb devices returned 1 devices/emulators
 [DEBUG] Device connected... (waited 0 seconds)
-[DEBUG] waited 0.015000 seconds on emulator to get ready
+[DEBUG] waited 0.016000 seconds on emulator to get ready
 [DEBUG] com.Madjdc.MyApp installed? True
 [INFO] Fastdev server running, deploying in Fastdev mode
 [INFO] Copying project resources..
 [TRACE] COPYING MODIFIED FILE: C:\AppSpace\SchoolApp\Resources\app.js => C:\AppSpace\SchoolApp\build\android\bin\assets\Resources\app.js
+[TRACE] COPYING CREATED FILE: C:\AppSpace\SchoolApp\Resources\KS_nav_mashup.png => C:\AppSpace\SchoolApp\build\android\bin\assets\Resources\KS_nav_mashup.png
+[TRACE] COPYING MODIFIED FILE: C:\AppSpace\SchoolApp\Resources\tweets.js => C:\AppSpace\SchoolApp\build\android\bin\assets\Resources\tweets.js
 [INFO] Tiapp.xml unchanged, skipping class generation
 [DEBUG] Processing Android resource drawables
 [DEBUG] found drawable-long-land-hdpi splash screen at C:\AppSpace\SchoolApp\Resources\android\images\res-long-land-hdpi\default.png
