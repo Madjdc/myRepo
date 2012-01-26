@@ -1,21 +1,28 @@
-// Creates a tab group with Titanium.UI API.
 var tabGroup = Titanium.UI.createTabGroup();
 
-// Create the window "mainWin"
 var mainWin = Titanium.UI.createWindow ({
-	title: "@Madjdc", // Set the title
-	backgroundColor: "#fff", // Set the background color to white
-	url: "tweets.js" // Link to file which will handle the code for the window
+	title: "Twitter",
+	backgroundColor: "#fff",
+	url: "tweets.js" 
 });
 
-// Create the tab "mainTab"
+var secondWin = Titanium.UI.createWindow ({
+	title: "Test",
+	backgroundColor: "#fff", 
+	url: "test.js" 
+});
+
 var mainTab = Titanium.UI.createTab ({
-	title: "Twitter", // Title of the tab: "Twitter"	
-	icon: "KS_nav_mashup.png", // Icon for tab : Included in the source files
-	window: mainWin // We will create the window "mainWin"
+	title: "Twitter",	
+	window: mainWin 
 });
 
-// Add the tab to our tab group
+var secondTab = Titanium.UI.createTab ({
+	title: "Test",
+	window: secondWin
+});
+
 tabGroup.addTab(mainTab);
+tabGroup.addTab(secondTab);
 
 tabGroup.open();

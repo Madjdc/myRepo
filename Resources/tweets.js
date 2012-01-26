@@ -1,28 +1,22 @@
-// Create variable "win" to refer to current window
+
 var win = Titanium.UI.currentWindow;
 
-// Function loadTweets()
 function loadTweets()
 {
-	// Empty array "rowData" for our tableview
 	var rowData = [];
-	// Create our HTTP Client and name it "loader"
 	var loader = Titanium.Network.createHTTPClient();
-	// Sets the HTTP request method, and the URL to get data from
 	loader.open("GET","http://api.twitter.com/1/statuses/user_timeline.json?screen_name=madjdc");
-	// Runs the function when the data is ready for us to process
 	loader.onload = function() 
 	{
 		var tweets = eval('('+this.responseText+')');
 		for (var i = 0; i < tweets.length; i++)
 		{
-			var tweet = tweets[i].text; // The tweet message
-			var user = tweets[i].user.screen_name; // The screen name of the user
-			var avatar = tweets[i].user.profile_image_url; // The profile image
-			// Create a row and set its height to auto
+			var tweet = tweets[i].text;
+			var user = tweets[i].user.screen_name;
+			var avatar = tweets[i].user.profile_image_url;
+			
 			var row = Titanium.UI.createTableViewRow({height:'auto'});
 
-			// Create the view that will contain the text and avatar
 			var post_view = Titanium.UI.createView({
 				height:'auto', 
 				layout:'vertical',
@@ -31,16 +25,16 @@ function loadTweets()
 				bottom:5,
 				left:5
 			});
-			// Create image view to hold profile pic
+			
 			var av_image = Titanium.UI.createImageView({
-				url:avatar, // the image for the image view
+				url:avatar, 
 				top:0,
 				left:0,
 				height:48,
 				width:48
 			});
 			post_view.add(av_image);
-			// Create the label to hold the screen name
+			
 			var user_lbl = Titanium.UI.createLabel({
 				text:user,
 				left:54,
@@ -53,7 +47,7 @@ function loadTweets()
 				font:{fontFamily:'Trebuchet MS',fontSize:14,fontWeight:'bold'}
 			});
 			post_view.add(user_lbl);
-			// Create the label to hold the tweet message
+			
 			var tweet_lbl = Titanium.UI.createLabel({
 				text:tweet,
 				left:54,
@@ -65,19 +59,17 @@ function loadTweets()
 				font:{fontSize:14}
 			});
 			post_view.add(tweet_lbl);
-			// Add the post view to the row
-			row.add(post_view);
-			// Give each row a class name
-			row.className = "item"+i;
-			// Add row to the rowData array
+			
+			row.add(post_view);			
+			row.className = "item"+i;			
 			rowData[i] = row;
 		}
-		// Create the table view and set its data source to "rowData" array
+		
 		var tableView = Titanium.UI.createTableView({data:rowData});
-		//Add the table view to the window
+		
 		win.add(tableView);
 	};
-	// Send the HTTP request
+	
 	loader.send();
 }
 loadTweets();

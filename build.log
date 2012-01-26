@@ -5,14 +5,14 @@ Logfile initialized
 [INFO] Titanium SDK version: 1.8.0.1 (12/22/11 13:09 fbdc96f)
 [DEBUG] Waiting for device to be ready ...
 [TRACE] adb devices returned 1 devices/emulators
-[DEBUG] Device connected... (waited 0 seconds)
-[DEBUG] waited 0.016000 seconds on emulator to get ready
+[TRACE] adb devices returned 1 devices/emulators
+[TRACE] adb devices returned 1 devices/emulators
+[DEBUG] Device connected... (waited 10 seconds)
+[DEBUG] waited 10.059000 seconds on emulator to get ready
+[INFO] Waiting for the Android Emulator to become available
 [DEBUG] com.Madjdc.MyApp installed? True
 [INFO] Fastdev server running, deploying in Fastdev mode
 [INFO] Copying project resources..
-[TRACE] COPYING MODIFIED FILE: C:\AppSpace\SchoolApp\Resources\app.js => C:\AppSpace\SchoolApp\build\android\bin\assets\Resources\app.js
-[TRACE] COPYING CREATED FILE: C:\AppSpace\SchoolApp\Resources\KS_nav_mashup.png => C:\AppSpace\SchoolApp\build\android\bin\assets\Resources\KS_nav_mashup.png
-[TRACE] COPYING MODIFIED FILE: C:\AppSpace\SchoolApp\Resources\tweets.js => C:\AppSpace\SchoolApp\build\android\bin\assets\Resources\tweets.js
 [INFO] Tiapp.xml unchanged, skipping class generation
 [DEBUG] Processing Android resource drawables
 [DEBUG] found drawable-long-land-hdpi splash screen at C:\AppSpace\SchoolApp\Resources\android\images\res-long-land-hdpi\default.png
@@ -30,4 +30,3 @@ Logfile initialized
 [INFO] Launching application ... myApp
 [TRACE] Launch output: Starting: Intent { act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] cmp=com.Madjdc.MyApp/.MyappActivity }
 
-[INFO] Relaunched myApp ... Application should be running.
