@@ -7,9 +7,9 @@ var mainWin = Titanium.UI.createWindow ({
 });
 
 var secondWin = Titanium.UI.createWindow ({
-	title: "Test",
+	title: "NewTweets",
 	backgroundColor: "#fff", 
-	url: "test.js" 
+	url: "newTweets.js" 
 });
 
 var mainTab = Titanium.UI.createTab ({
@@ -24,5 +24,6 @@ var secondTab = Titanium.UI.createTab ({
 
 tabGroup.addTab(mainTab);
 tabGroup.addTab(secondTab);
+
 
 tabGroup.open();
