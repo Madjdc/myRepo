@@ -13,12 +13,12 @@ var secondWin = Titanium.UI.createWindow ({
 });
 
 var mainTab = Titanium.UI.createTab ({
-	title: "Twitter",	
+	title: "My Timeline",	
 	window: mainWin 
 });
 
 var secondTab = Titanium.UI.createTab ({
-	title: "Test",
+	title: "New Tweet",
 	window: secondWin
 });
 

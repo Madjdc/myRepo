@@ -15,7 +15,11 @@ function loadTweets()
 			var user = tweets[i].user.screen_name;
 			var avatar = tweets[i].user.profile_image_url;
 			
-			var row = Titanium.UI.createTableViewRow({height:'auto'});
+			var row = Titanium.UI.createTableViewRow({
+				detail1:user,
+				detail2:tweet,
+				height:'auto'
+				});
 
 			var post_view = Titanium.UI.createView({
 				height:'auto', 
@@ -61,11 +65,19 @@ function loadTweets()
 			post_view.add(tweet_lbl);
 			
 			row.add(post_view);			
-			row.className = "item"+i;			
+			row.className = 'myTweets';			
 			rowData[i] = row;
 		}
 		
 		var tableView = Titanium.UI.createTableView({data:rowData});
+		tableView.addEventListener('click', function(e){
+			var messagebox = Titanium.UI.createAlertDialog({
+				title:e.rowData.detail1,
+				message:e.rowData.detail2,
+				buttonNames: ['Back']
+			});
+			messagebox.show();
+		});
 		
 		win.add(tableView);
 	};
