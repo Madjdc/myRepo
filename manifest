@@ -1,8 +1,8 @@
-#appname: myApp
-#publisher: School
-#url: http://
-#image: appicon.png
-#appid: Myapp
-#desc: undefined
-#type: mobile
-#guid: 5fda579a-5fa1-4e3d-9ca7-768c4f88ee65
+#appname:myApp
+#publisher:School
+#url:http://
+#image:appicon.png
+#appid:com.Madjdc.MyApp
+#desc:not specified
+#type:mobile
+#guid:5fda579a-5fa1-4e3d-9ca7-768c4f88ee65
