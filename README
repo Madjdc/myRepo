@@ -1,18 +1,16 @@
-Welcome to your Appcelerator Titanium Mobile Project
+This is an application I'm building, or atleast trying to build, for a school project.
 
-This is a blank project.  Start by editing your application's app.js to 
-make your first mobile project using Titanium.
+The goal =
+
+- Have a menu with buttons to navigate to your timeline or new tweet section.
+- Have a Timeline where you can view recent tweets and their detail. (Currently I can see my own timeline, goal = global)
+- Post a new tweet to twitter.
 
 
+Things to do:
 
-----------------------------------
-Stuff our legal folk make us say:
+Make a menu
+Style it all
+Get global timeline
 
-Appcelerator, Appcelerator Titanium and associated marks and logos are 
-trademarks of Appcelerator, Inc. 
-
-Titanium is Copyright (c) 2009-2010 by Appcelerator, Inc. All Rights Reserved.
-
-Titanium is licensed under the Apache Public License (Version 2). Please
-see the LICENSE file for the full license.
-
+Optional: Get a detail with the picture, now its just an alertbox with the full tweet...
