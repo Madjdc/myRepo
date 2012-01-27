@@ -47,7 +47,7 @@ function loadTweets()
 				bottom:2,
 				height:16,
 				textAlign:'left',
-				color:'#444444',
+				color:'#ffffff',
 				font:{fontFamily:'Trebuchet MS',fontSize:14,fontWeight:'bold'}
 			});
 			post_view.add(user_lbl);
@@ -60,7 +60,7 @@ function loadTweets()
 				height:'auto',
 				width:236,
 				textAlign:'left',
-				color:'#444444',
+				color:'#ffffff',
 				font:{fontSize:14}
 			});
 			post_view.add(tweet_lbl);
@@ -72,8 +72,13 @@ function loadTweets()
 		
 		var tableView = Titanium.UI.createTableView({
 				data:rowData,
-				top:0,  
-				height:350
+				left:10,
+				width:300,
+				top:70,
+				borderColor:'#224466',
+				borderWidth:3,
+				borderRadius:3.0,  
+				height:320
 			});
 		tableView.addEventListener('click', function(e){
 			var messagebox = Titanium.UI.createAlertDialog({
@@ -91,9 +96,29 @@ function loadTweets()
 }
 loadTweets();
 
+var title_lbl = Titanium.UI.createLabel({
+				text:"Your Timeline",
+				top:20,
+				textAlign:'center',
+				color:'#444444',
+				font:{fontFamily:'Trebuchet MS',fontSize:20,fontWeight:'bold'}
+			});
+			
+win.add(title_lbl);
+
+var detail_lbl = Titanium.UI.createLabel({
+				text:"Click item to get full Tweet!",
+				top:390,
+				textAlign:'center',
+				color:'#444444',
+				font:{fontFamily:'Trebuchet MS',fontSize:12,fontWeight:'bold'}
+			});
+			
+win.add(detail_lbl);
+
 var backBtn = Titanium.UI.createButton({
 	title:'Back',
-	top:370,
+	top:420,
 	width:160,
 	height:40
 });
