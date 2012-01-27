@@ -17,7 +17,7 @@ var tweetButton = Titanium.UI.createButton({
 tweetButton.addEventListener('click', function(e){
 	var secondWin = Titanium.UI.createWindow ({
 		title: "NewTweets",
-		backgroundColor: "#fff", 
+		backgroundColor: "#559abb", 
 		url: "newTweets.js" 
 	});
 	secondWin.open();	
@@ -32,7 +32,7 @@ var checkButton = Titanium.UI.createButton({
 checkButton.addEventListener('click', function(e){
 	var timelineWin = Titanium.UI.createWindow ({
 		title: "Timeline",
-		backgroundColor: "#fff",
+		backgroundColor: "#559abb",
 		url: "tweets.js" 
 	});	
 	timelineWin.open();
@@ -42,3 +42,6 @@ checkButton.addEventListener('click', function(e){
 win.add(title_lbl);
 win.add(tweetButton);
 win.add(checkButton);
+
+
+//#559abb

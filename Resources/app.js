@@ -1,6 +1,6 @@
  var mainWin = Titanium.UI.createWindow({
  	title:'Menu',
- 	backgroundColor:'#fff',
+ 	backgroundColor:'#559abb',
  	url:'menu.js'
  });
 

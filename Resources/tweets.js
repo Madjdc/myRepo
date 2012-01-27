@@ -60,6 +60,7 @@ function loadTweets()
 				height:'auto',
 				width:236,
 				textAlign:'left',
+				color:'#444444',
 				font:{fontSize:14}
 			});
 			post_view.add(tweet_lbl);
@@ -99,7 +100,7 @@ var backBtn = Titanium.UI.createButton({
 backBtn.addEventListener('click', function(e){
 	var mainWin = Titanium.UI.createWindow({
  		title:'Menu',
- 		backgroundColor:'#fff',
+ 		backgroundColor:'#559abb',
  		url:'menu.js'
 	});
 

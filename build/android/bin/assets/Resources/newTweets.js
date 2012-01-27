@@ -37,7 +37,7 @@ var backBtn = Titanium.UI.createButton({
 backBtn.addEventListener('click', function(e){
 	var mainWin = Titanium.UI.createWindow({
  		title:'Menu',
- 		backgroundColor:'#fff',
+ 		backgroundColor:'#559abb',
  		url:'menu.js'
 	});
 

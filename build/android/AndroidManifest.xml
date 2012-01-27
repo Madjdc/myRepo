@@ -7,13 +7,13 @@
 	<!-- TI_MANIFEST -->
 
 	<application android:icon="@drawable/appicon"
-		android:label="myApp" android:name="MyappApplication"
+		android:label="Did I Tweet?" android:name="MyappApplication"
 		android:debuggable="false">
 
 		<!-- TI_APPLICATION -->
 
 		<activity android:name=".MyappActivity"
-			android:label="myApp" android:theme="@style/Theme.Titanium"
+			android:label="Did I Tweet?" android:theme="@style/Theme.Titanium"
 			android:configChanges="keyboardHidden|orientation">
 			<intent-filter>
 				<action android:name="android.intent.action.MAIN" />
