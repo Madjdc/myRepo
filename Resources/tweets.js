@@ -69,7 +69,11 @@ function loadTweets()
 			rowData[i] = row;
 		}
 		
-		var tableView = Titanium.UI.createTableView({data:rowData});
+		var tableView = Titanium.UI.createTableView({
+				data:rowData,
+				top:0,  
+				height:350
+			});
 		tableView.addEventListener('click', function(e){
 			var messagebox = Titanium.UI.createAlertDialog({
 				title:e.rowData.detail1,
@@ -85,3 +89,25 @@ function loadTweets()
 	loader.send();
 }
 loadTweets();
+
+var backBtn = Titanium.UI.createButton({
+	title:'Back',
+	top:370,
+	width:160,
+	height:40
+});
+backBtn.addEventListener('click', function(e){
+	var mainWin = Titanium.UI.createWindow({
+ 		title:'Menu',
+ 		backgroundColor:'#fff',
+ 		url:'menu.js'
+	});
+
+	mainWin.open();
+	win.close();
+});
+
+win.add(backBtn);
+
+
+

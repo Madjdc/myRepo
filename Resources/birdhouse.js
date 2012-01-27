@@ -698,6 +698,8 @@ return true;
 }
 });
 });
+
+
 btnCancel.addEventListener('click',function() {
 // hide the keyboard on Android because it doesn't automatically
 if (Ti.Platform.osname=='android') {
@@ -706,6 +708,8 @@ Titanium.UI.Android.hideSoftKeyboard();
 winBG.close();
 winTW.close();
 });
+
+
 winTW.add(charcount);
 winTW.add(tweet);
 winTW.add(btnTW);
