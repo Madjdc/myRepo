@@ -1,16 +1,48 @@
-This is an application I'm building, or atleast trying to build, for a school project.
+Did I tweet that Already?  v0.9
 
-The goal =
+******************************************************
 
-- Have a menu with buttons to navigate to your timeline or new tweet section.
-- Have a Timeline where you can view recent tweets and their detail. (Currently I can see my own timeline, goal = global)
-- Post a new tweet to twitter.
+This is a school project for the course: "Mobile Development" at Lessius Hogeschool Mechelen.
 
+	- Made by: Jelle De Clerck / 3-IMD-B
+	- Madjdc @ www.madjdc.be
 
-Things to do:
+******************************************************
 
-Make a menu
-Style it all
-Get global timeline
+Basic features:
 
-Optional: Get a detail with the picture, now its just an alertbox with the full tweet...
+	- Main screen with buttons to navigate
+	- A list filled with things coming from a webservice (This case Twitter)
+	- A way to get the full view of a selected item in the list
+	- A way to post a new record to an online webservice (This case a new Tweet)
+	
+	- All this in a correct lay-out
+	
+******************************************************
+
+Special thanks to:
+
+	- Twitter for their api
+	- Jpurcell for the development of the Birdhouse.js code wich helped me alot
+	
+******************************************************
+
+Notes:
+
+	- The timeline that gets pulled is at the moment my own, hardcoded in tweets.js
+	- Din't get the get_tweets running from the birdhouse.js 
+	- For some basic lay-out functions I had to rewrite some parts of the manifest.xml and tiapp.xml files
+	  This can be found in the platform folder, otherwhise they get overwritten each fresh build.
+	- The url tag from the images is deprecated, but android can still use that.
+	- There are backbuttons on each screen so the function of the hardware backbutton remains to close the application.
+	- If you want to post a new tweet, you will have to authorize the app with your account. This will enable you to post new tweets. 
+	  (on your own timeline, not the hard-coded one)
+	- The callback function is set at my own website, so dont do to many calls or I will be forced to pull down the app due to too much traffic.
+
+******************************************************
+
+Free to use:
+
+	- All code is free to use to others, but I would like it alot, if you take anything, that you mention my name: Madjdc (www.madjdc.be)
+	
+******************************************************
