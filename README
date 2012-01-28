@@ -31,13 +31,18 @@ Notes:
 
 	- The timeline that gets pulled is at the moment my own, hardcoded in tweets.js
 	- Din't get the get_tweets running from the birdhouse.js 
-	- For some basic lay-out functions I had to rewrite some parts of the manifest.xml and tiapp.xml files
-	  This can be found in the platform folder, otherwhise they get overwritten each fresh build.
+	- For some basic lay-out functions I had to rewrite some parts of the manifest.xml 
+	  and tiapp.xml files
+	  This can be found in the platform folder, otherwhise they get overwritten
+	  each fresh build.
 	- The url tag from the images is deprecated, but android can still use that.
-	- There are backbuttons on each screen so the function of the hardware backbutton remains to close the application.
-	- If you want to post a new tweet, you will have to authorize the app with your account. This will enable you to post new tweets. 
+	- There are backbuttons on each screen so the function of the hardware backbutton 
+	  remains to close the application.
+	- If you want to post a new tweet, you will have to authorize the app with 
+	  your account. This will enable you to post new tweets. 
 	  (on your own timeline, not the hard-coded one)
-	- The callback function is set at my own website, so dont do to many calls or I will be forced to pull down the app due to too much traffic.
+	- The callback function is set at my own website, so dont do to many calls 
+	  or I will be forced to pull down the app due to too much traffic.
 
 ******************************************************
 
